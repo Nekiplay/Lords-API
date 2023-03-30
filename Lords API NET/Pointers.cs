@@ -9,12 +9,12 @@ namespace Lords_API
     {
         public Modules modules;
         public UserPointers user;
-        public ClanPointers clan;
+        public GuildPointers clan;
         public Pointers(Process game, VAMemory memory) 
         {
             modules = new Modules(game, memory);
             user = new UserPointers(memory, modules);
-            clan = new ClanPointers(game, memory, modules);
+            clan = new GuildPointers(game, memory, modules);
         }
     }
 

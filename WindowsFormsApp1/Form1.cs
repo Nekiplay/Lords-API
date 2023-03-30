@@ -28,7 +28,9 @@ namespace WindowsFormsApp1
             Console.WriteLine("Stamina: " + lordsAPI.user.Stamina);
             Console.WriteLine("Gems: " + lordsAPI.user.Gems);
             Console.WriteLine("==== Clan Info ====");
-            Console.WriteLine("Gifts: " + lordsAPI.clan.numberOfGifts);
+            Console.WriteLine("Help's: " + lordsAPI.guild.Help);
+            Console.WriteLine("Gifts: " + lordsAPI.guild.Gifts);
+            Console.WriteLine("Money: " + lordsAPI.guild.Money);
         }
     }
 }

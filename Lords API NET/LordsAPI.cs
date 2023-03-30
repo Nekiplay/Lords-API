@@ -15,7 +15,7 @@ namespace Lords_API
 
         
         public User user = null;
-        public Clan clan = null;
+        public Guild guild = null;
 
         public LordsAPI(Process gameProcess)
         {
@@ -28,7 +28,7 @@ namespace Lords_API
             game = gameProcess;
             pointers = new Pointers(game, memory);
             user = new User(memory, pointers);
-            clan = new Clan(memory, pointers);
+            guild = new Guild(memory, pointers);
         }
 
         public static IntPtr PointRead(VAMemory memory, IntPtr baseAddres, int[] offsets)
