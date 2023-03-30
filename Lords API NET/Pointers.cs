@@ -1,17 +1,20 @@
-﻿using System;
+﻿using Lords_API.implementation;
+using Lords_API.pointers;
+using System;
 using System.Diagnostics;
 
 namespace Lords_API
 {
     public class Pointers
     {
-        public IntPtr gameAssembly;
-
-        public IntPtr staminaAdress;
+        public Modules modules;
+        public UserPointers user;
+        public ClanPointers clan;
         public Pointers(Process game, VAMemory memory) 
         {
-            gameAssembly = LordsAPI.getModuleAdress("GameAssembly.dll", game);
-            staminaAdress = LordsAPI.PointRead(memory, gameAssembly, new int[] { 0x02DF3878, 0x7E4 });
+            modules = new Modules(game, memory);
+            user = new UserPointers(game, memory, modules);
+            clan = new ClanPointers(game, memory, modules);
         }
     }
 

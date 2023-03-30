@@ -13,7 +13,15 @@
         {
             get
             {
-                return memory.ReadInt32(pointers.staminaAdress);
+                return memory.ReadInt32(pointers.user.staminaAdress);
+            }
+        }
+
+        public int Gems
+        {
+            get
+            {
+                return memory.ReadInt32(pointers.user.gemsAdress);
             }
         }
     }

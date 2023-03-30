@@ -1,4 +1,5 @@
 ﻿using Lords_API.implementation;
+using Lords_API.pointers;
 using System;
 using System.Diagnostics;
 using System.Linq;
@@ -12,7 +13,9 @@ namespace Lords_API
         private Process game;
         private Pointers pointers;
 
+        
         public User user = null;
+        public Clan clan = null;
 
         public LordsAPI(Process gameProcess)
         {
@@ -25,6 +28,7 @@ namespace Lords_API
             game = gameProcess;
             pointers = new Pointers(game, memory);
             user = new User(memory, pointers);
+            clan = new Clan(memory, pointers);
         }
 
         public static IntPtr PointRead(VAMemory memory, IntPtr baseAddres, int[] offsets)
