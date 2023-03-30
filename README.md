@@ -1,4 +1,4 @@
-# Lords-API
+# Lords Mobile API (Unofficial)
 Lords Mobile Steam API Unofficial
 
 # Allowed by IGG
