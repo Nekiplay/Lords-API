@@ -16,7 +16,7 @@ namespace Lords_API.implementation
             this.pointers = pointers;
         }
 
-        public int numberOfGifts
+        public int Gifts
         {
             get
             {
