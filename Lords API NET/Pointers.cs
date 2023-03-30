@@ -13,7 +13,7 @@ namespace Lords_API
         public Pointers(Process game, VAMemory memory) 
         {
             modules = new Modules(game, memory);
-            user = new UserPointers(game, memory, modules);
+            user = new UserPointers(memory, modules);
             clan = new ClanPointers(game, memory, modules);
         }
     }
