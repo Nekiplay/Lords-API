@@ -8,7 +8,13 @@
             this.memory = memory;
             this.pointers = pointers;
         }
-
+        public int Power
+        {
+            get
+            {
+                return memory.ReadInt32(pointers.user.powerAdress);
+            }
+        }
         public int Stamina
         {
             get

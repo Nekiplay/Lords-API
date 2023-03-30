@@ -9,12 +9,14 @@ namespace Lords_API.pointers
 {
     public class UserPointers
     {
+        public IntPtr powerAdress;
         public IntPtr staminaAdress;
         public IntPtr gemsAdress;
-        public UserPointers(Process game, VAMemory memory, Modules modules)
+        public UserPointers(VAMemory memory, Modules modules)
         {
-            staminaAdress = LordsAPI.PointRead(memory, modules.gameAssembly, new int[] { 0x02DF3878, 0x7E4 });
-            gemsAdress = LordsAPI.PointRead(memory, modules.gameAssembly, new int[] { 0x02DF3878, 0x824 });
+            powerAdress = LordsAPI.PointRead(memory, modules.gameAssembly, new int[] { Pointers.user, 0x898 });
+            staminaAdress = LordsAPI.PointRead(memory, modules.gameAssembly, new int[] { Pointers.user, 0x7E4 });
+            gemsAdress = LordsAPI.PointRead(memory, modules.gameAssembly, new int[] { Pointers.user, 0x824 });
         }
     }
 }

@@ -23,9 +23,11 @@ namespace WindowsFormsApp1
         {
             Process game = Process.GetProcessesByName("Lords Mobile").First();
             LordsAPI lordsAPI = new LordsAPI(game);
-
+            Console.WriteLine("==== User Info ====");
+            Console.WriteLine("Power: " + lordsAPI.user.Power);
             Console.WriteLine("Stamina: " + lordsAPI.user.Stamina);
             Console.WriteLine("Gems: " + lordsAPI.user.Gems);
+            Console.WriteLine("==== Clan Info ====");
             Console.WriteLine("Gifts: " + lordsAPI.clan.numberOfGifts);
         }
     }

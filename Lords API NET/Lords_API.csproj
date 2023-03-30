@@ -53,6 +53,7 @@
     <Compile Include="Pointers.cs" />
     <Compile Include="pointers\ClanPointers.cs" />
     <Compile Include="pointers\Modules.cs" />
+    <Compile Include="pointers\Pointers.cs" />
     <Compile Include="pointers\UserPointers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
