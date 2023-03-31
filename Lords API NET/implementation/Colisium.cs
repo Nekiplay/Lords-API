@@ -16,11 +16,11 @@ namespace Lords_API.implementation
             this.pointers = pointers;
         }
 
-        public int Power
+        public int Rank
         {
             get
             {
-                return memory.ReadInt32(pointers.colisium.powerAdress);
+                return memory.ReadInt32(pointers.colisium.rankAdress);
             }
         }
     }

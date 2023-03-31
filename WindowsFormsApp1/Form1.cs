@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             Console.WriteLine("==== Watchtower info ====");
             Console.WriteLine("Attacked: " + lordsAPI.user.isAttacked);
             Console.WriteLine("==== Colisium info ====");
-            Console.WriteLine("Power: " + lordsAPI.colisium.Power);
+            Console.WriteLine("Rank: " + lordsAPI.colisium.Rank);
             Console.WriteLine("==== User Info ====");
             Console.WriteLine("Power: " + lordsAPI.user.Power);
             Console.WriteLine("Stamina: " + lordsAPI.user.Stamina);
