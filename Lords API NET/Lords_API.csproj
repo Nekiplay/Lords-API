@@ -47,10 +47,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="implementation\Barrack.cs" />
+    <Compile Include="implementation\Colisium.cs" />
     <Compile Include="implementation\Guild.cs" />
     <Compile Include="implementation\User.cs" />
     <Compile Include="LordsAPI.cs" />
     <Compile Include="Pointers.cs" />
+    <Compile Include="pointers\BarrackPointers.cs" />
+    <Compile Include="pointers\ColisiumPointers.cs" />
     <Compile Include="pointers\GuildPointers.cs" />
     <Compile Include="pointers\Modules.cs" />
     <Compile Include="pointers\Pointers.cs" />

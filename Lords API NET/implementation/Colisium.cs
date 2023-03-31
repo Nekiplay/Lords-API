@@ -1,27 +1,26 @@
-﻿using Binarysharp.MemoryManagement;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Lords_API.implementation
 {
-    public class User
+    public class Colisium
     {
-        private MemorySharp memory;
+        private VAMemory memory;
         private Pointers pointers;
-        public User(MemorySharp memory, Pointers pointers) {
+        public Colisium(VAMemory memory, Pointers pointers)
+        {
             this.memory = memory;
             this.pointers = pointers;
         }
 
-        public int Stamina
+        public int Power
         {
             get
             {
-                IntPtr address = LordsAPI.PointRead(memory, pointers.gameAssembly, new int[] {});
+                return memory.ReadInt32(pointers.colisium.powerAdress);
             }
         }
     }
