@@ -8,10 +8,16 @@ Lords Mobile Steam API Unofficial
 ```csharp
 Process game = Process.GetProcessesByName("Lords Mobile").First();
 LordsAPI lordsAPI = new LordsAPI(game);
+Console.WriteLine("==== Watchtower info ====");
+Console.WriteLine("Attacked: " + lordsAPI.user.isAttacked);
+Console.WriteLine("==== Colisium info ====");
+Console.WriteLine("Power: " + lordsAPI.colisium.Power);
 Console.WriteLine("==== User Info ====");
 Console.WriteLine("Power: " + lordsAPI.user.Power);
 Console.WriteLine("Stamina: " + lordsAPI.user.Stamina);
 Console.WriteLine("Gems: " + lordsAPI.user.Gems);
+Console.WriteLine("==== Barrack info ====");
+Console.WriteLine("Army: " + lordsAPI.barrack.Army);
 Console.WriteLine("==== Guild Info ====");
 Console.WriteLine("Help's: " + lordsAPI.guild.Help);
 Console.WriteLine("Gifts: " + lordsAPI.guild.Gifts);
