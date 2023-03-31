@@ -12,6 +12,8 @@ Console.WriteLine("==== User Info ====");
 Console.WriteLine("Power: " + lordsAPI.user.Power);
 Console.WriteLine("Stamina: " + lordsAPI.user.Stamina);
 Console.WriteLine("Gems: " + lordsAPI.user.Gems);
-Console.WriteLine("==== Clan Info ====");
-Console.WriteLine("Gifts: " + lordsAPI.clan.Gifts);
+Console.WriteLine("==== Guild Info ====");
+Console.WriteLine("Help's: " + lordsAPI.guild.Help);
+Console.WriteLine("Gifts: " + lordsAPI.guild.Gifts);
+Console.WriteLine("Money: " + lordsAPI.guild.Money);
 ```
