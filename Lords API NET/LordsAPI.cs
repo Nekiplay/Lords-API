@@ -15,10 +15,10 @@ namespace Lords_API
 
         
         public User user = null;
-        public Colisium colisium = null;
-        public Guild guild = null;
-        public Barrack barrack = null;
-        public Resources resources = null;
+        //public Colisium colisium = null;
+        //public Guild guild = null;
+        //public Barrack barrack = null;
+        //public Resources resources = null;
 
         public LordsAPI(Process gameProcess)
         {
@@ -31,10 +31,10 @@ namespace Lords_API
             game = gameProcess;
             pointers = new Pointers(game, memory);
             user = new User(memory, pointers);
-            guild = new Guild(memory, pointers);
-            colisium = new Colisium(memory, pointers);
-            barrack = new Barrack(memory, pointers);
-            resources = new Resources(memory, pointers);
+            //guild = new Guild(memory, pointers);
+            //colisium = new Colisium(memory, pointers);
+            //barrack = new Barrack(memory, pointers);
+            //resources = new Resources(memory, pointers);
         }
 
         public static IntPtr PointRead(VAMemory memory, IntPtr baseAddres, int[] offsets)
