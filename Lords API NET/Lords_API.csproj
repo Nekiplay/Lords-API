@@ -50,6 +50,12 @@
     <Compile Include="implementation\Barrack.cs" />
     <Compile Include="implementation\Colisium.cs" />
     <Compile Include="implementation\Guild.cs" />
+    <Compile Include="implementation\Resources.cs" />
+    <Compile Include="implementation\resources\Food.cs" />
+    <Compile Include="implementation\resources\Gold.cs" />
+    <Compile Include="implementation\resources\Ore.cs" />
+    <Compile Include="implementation\resources\Stone.cs" />
+    <Compile Include="implementation\resources\Wood.cs" />
     <Compile Include="implementation\User.cs" />
     <Compile Include="LordsAPI.cs" />
     <Compile Include="Pointers.cs" />
@@ -58,6 +64,7 @@
     <Compile Include="pointers\GuildPointers.cs" />
     <Compile Include="pointers\Modules.cs" />
     <Compile Include="pointers\Pointers.cs" />
+    <Compile Include="pointers\ResourcesPointers.cs" />
     <Compile Include="pointers\UserPointers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

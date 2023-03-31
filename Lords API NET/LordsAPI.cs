@@ -18,6 +18,7 @@ namespace Lords_API
         public Colisium colisium = null;
         public Guild guild = null;
         public Barrack barrack = null;
+        public Resources resources = null;
 
         public LordsAPI(Process gameProcess)
         {
@@ -33,6 +34,7 @@ namespace Lords_API
             guild = new Guild(memory, pointers);
             colisium = new Colisium(memory, pointers);
             barrack = new Barrack(memory, pointers);
+            resources = new Resources(memory, pointers);
         }
 
         public static IntPtr PointRead(VAMemory memory, IntPtr baseAddres, int[] offsets)

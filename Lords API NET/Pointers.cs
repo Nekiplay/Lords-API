@@ -12,6 +12,7 @@ namespace Lords_API
         public ColisiumPointers colisium;
         public GuildPointers clan;
         public BarrackPointers barrack;
+        public ResourcesPointers resources;
         public Pointers(Process game, VAMemory memory) 
         {
             modules = new Modules(game, memory);
@@ -19,6 +20,7 @@ namespace Lords_API
             clan = new GuildPointers(game, memory, modules);
             colisium = new ColisiumPointers(game, memory, modules);
             barrack = new BarrackPointers(game, memory, modules);
+            resources = new ResourcesPointers(game, memory, modules);
         }
     }
 
